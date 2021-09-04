@@ -41,7 +41,7 @@ public class CartController {
         cart.setQuantity(quantity);
         cart.setCost(price * quantity);
 
-        User user = (User) session.getAttribute("user");
+        User    user = (User) session.getAttribute("user");
         cart.setUserId(user.getId());
         try {
             if (cartService.save(cart)) {
