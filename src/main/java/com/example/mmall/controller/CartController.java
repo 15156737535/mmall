@@ -99,7 +99,7 @@ public class CartController {
         cart.setQuantity(quantity);
         cart.setCost(cost);
         if (cartService.updateById(cart)) {
-            return "success1";
+            return "success";
         }
        else {
            return "false";
